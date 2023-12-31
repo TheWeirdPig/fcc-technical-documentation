@@ -1,9 +1,89 @@
-html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
 }
 
 * {
-    box-sizing: inherit;
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    color: #21130d;
+}
+
+
+/* css for navigation */
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 100%;
+    background-color: aqua;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #eeeee4;
+    border-right: 1px solid #21130d;
+}
+
+#navbar h1{
+    text-align: center;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar li {
+    height: calc(100% / 14);
+    border-top: 1px solid #21130d;
+    border-bottom: 1px solid #eeeee4;
+}
+
+#navbar a {
+    text-decoration: none;    
+}
+
+#navbar a p {
+    margin: calc(100% / 28) 0;
+    padding: 0 30px;
+    color: #21130d;
+    font-size: 20px;
+}
+
+/* css for main content */
+
+main {
+    position: relative;
+    left: 350px;
+    width: calc(100% - 360px);
+    padding-left: 25px;
+}
+
+main section {
+    padding-top: 10px;
+}
+
+main .code {
+    background-color: #eeeee9;
+    border-radius: 10px;
+    padding: 20px;
+    font-style: italic;
+}
+
+main li {
+    margin: 15px 0;
+}
+
+main header h1 {
+    margin-left: -12px;
 }
